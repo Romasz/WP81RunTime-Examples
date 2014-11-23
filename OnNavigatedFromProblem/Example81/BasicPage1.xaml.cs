@@ -105,12 +105,12 @@ namespace Example81
             this.navigationHelper.OnNavigatedTo(e);
         }
 
-        protected override void OnNavigatedFrom(NavigationEventArgs e)
-        {
-            this.navigationHelper.OnNavigatedFrom(e);
-            Debug.WriteLine("Navigation");
-            this.Background = new SolidColorBrush(Colors.Red);
-        }
+    protected override void OnNavigatedFrom(NavigationEventArgs e)
+    {
+        this.navigationHelper.OnNavigatedFrom(e);
+        Debug.WriteLine("Navigation");
+        this.Background = new SolidColorBrush(Colors.Red);
+    }
 
         #endregion
     }
